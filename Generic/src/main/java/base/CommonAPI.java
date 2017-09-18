@@ -43,6 +43,7 @@ public class CommonAPI {
     private String browserstack_username = "";
     private String browserstack_accesskey = "";
 
+    @Parameters({"useCloudEnv", "cloudEnvName", "os", "os_version", "browser_name", "browser_version", "url"})
     @BeforeMethod
     public void setUp(boolean useCloudEnv, String cloudEnvName, String os, String os_version,
                       String browser_name, String browser_version, String url) throws IOException {
