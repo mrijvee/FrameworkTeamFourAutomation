@@ -1,6 +1,6 @@
 package pageobject;
 
-import common.CommonAPI;
+import base.CommonAPI;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -56,8 +56,7 @@ public class HomePage extends CommonAPI {
         emailBox.sendKeys("sukantasaha91@gmail.com");
         passswordBox.sendKeys("No171717");
         loginBox.click();
-        Alert popup = driver.switchTo().alert();
-        popup.dismiss();
+        //
         Thread.sleep(5000);
         createAPost.click();
         homePage.click();
