@@ -13,6 +13,7 @@
         <module>Twitter</module>
         <module>Geico</module>
         <module>NorthwesternMutual</module>
+        <module>Facebook</module>
     </modules>
 
     <dependencyManagement>
