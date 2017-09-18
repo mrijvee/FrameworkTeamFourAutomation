@@ -11,6 +11,8 @@
     <modules>
         <module>Generic</module>
         <module>Twitter</module>
+        <module>Facebook</module>
+        <module>Progressive</module>
         <module>Geico</module>
         <module>NorthwesternMutual</module>
         <module>Facebook</module>
