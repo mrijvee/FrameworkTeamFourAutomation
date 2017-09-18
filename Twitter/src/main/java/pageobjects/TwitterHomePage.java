@@ -2,15 +2,13 @@ package pageobjects;
 
 
 
-import common.CommonAPI;
+import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import javax.xml.xpath.XPath;
-
-import static common.CommonAPI.driver;
 
 public class TwitterHomePage extends CommonAPI {
 
