@@ -1,12 +1,10 @@
 package testPageObject;
 
-import common.CommonAPI;
+import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import pageobjects.ProfilePage;
 import pageobjects.TwitterHomePage;
-
-import static common.CommonAPI.driver;
 
 public class TestPofilePage extends CommonAPI{
 
