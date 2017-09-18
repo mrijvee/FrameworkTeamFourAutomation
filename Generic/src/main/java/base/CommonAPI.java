@@ -65,6 +65,7 @@ public class CommonAPI {
     }
 
     public WebDriver getLocalDriver(String os, String browser_name){
+        os = os.toLowerCase();
         if(browser_name.equalsIgnoreCase("chrome")){
             if(os.contains("win")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
