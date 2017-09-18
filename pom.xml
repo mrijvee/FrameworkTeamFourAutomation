@@ -16,7 +16,7 @@
         <module>Geico</module>
         <module>NorthwesternMutual</module>
         <module>Facebook</module>
-        <module>Amazon</module>
+
     </modules>
 
     <dependencyManagement>
