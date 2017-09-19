@@ -1,9 +1,6 @@
-package testpageobject;
+package pageobject;
 
 import base.CommonAPI;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-import pageobject.HomePage;
 
 public class TestHomePage extends CommonAPI {
 

@@ -196,14 +196,14 @@ public class CommonAPI {
     }
 
     //Synchronization
-//    public void waitUntilClickAble(By locator) {
-//        WebDriverWait wait = new WebDriverWait(driver, 10);
-//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-//    }
-//    public void waitUntilVisible(By locator) {
-//        WebDriverWait wait = new WebDriverWait(driver, 10);
-//        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-//    }
+    public void waitUntilClickAble(WebElement locator) {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    public void waitUntilVisible(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
 //    public void waitUntilSelectable(By locator) {
 //        WebDriverWait wait = new WebDriverWait(driver, 10);
 //        boolean element = wait.until(ExpectedConditions.elementToBeSelected(locator));

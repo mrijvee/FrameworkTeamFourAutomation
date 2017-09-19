@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Facebook" parallel="tests">
+<suite name="ChaseBank " parallel="tests">
 
-    <test name="Facebook Features">
+    <test name="ChaseBank Features">
 
         <parameter name="useCloudEnv" value="false"/>
         <parameter name="cloudEnvName" value="browserstack"/>
         <parameter name="os" value="win"/>
         <parameter name="os_version" value="Sierra"/>
-        <parameter name="browser_name" value="firefox"/>
+        <parameter name="browser_name" value="chrome"/>
         <parameter name="browser_version" value="53.0"/>
-        <parameter name="url" value="https://facebook.com"/>
+        <parameter name="url" value="https://www.chase.com/"/>
 
         <classes>
-            <class name="pageobject.TestHomePage"/>
+            <class name="PageObject.HomePage"/>
+            <class name="PageObject.TestHomePage"/>
         </classes>
     </test>
 
