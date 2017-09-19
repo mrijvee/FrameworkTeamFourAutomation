@@ -66,9 +66,6 @@ public class TwitterHomePage extends CommonAPI {
     @FindBy(css = ".text")
     public static WebElement notificationBox;
 
-
-
-
     public void logInProcess(String name, String inputPassword){
         signInNameBox.sendKeys(name);
         signInPassword.sendKeys(inputPassword);
