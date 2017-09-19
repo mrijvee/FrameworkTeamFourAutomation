@@ -9,8 +9,15 @@ public class ProfilePage extends CommonAPI {
     @FindBy(xpath = ".//*[@id='global-actions']/li[2]/a/span[3]")
     public static WebElement mommentsBox;
 
+    @FindBy(xpath = ".//*[@id='page-container']/div[2]/div[2]/div/ul/li[4]/a")
+    public static WebElement addPhotoBox;
+
     public void goMoments() throws InterruptedException {
         mommentsBox.click();
+        Thread.sleep(1500);
+    }
+    public void goAddPhoto() throws InterruptedException {
+        addPhotoBox.click();
         Thread.sleep(1500);
     }
 }

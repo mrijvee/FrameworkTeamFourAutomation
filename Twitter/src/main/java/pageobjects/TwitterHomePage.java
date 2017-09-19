@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import javax.xml.xpath.XPath;
 
+import static base.CommonAPI.driver;
+
 public class TwitterHomePage extends CommonAPI {
 
 
@@ -65,6 +67,9 @@ public class TwitterHomePage extends CommonAPI {
     public static WebElement enterNameBox;
     @FindBy(css = ".text")
     public static WebElement notificationBox;
+
+
+
 
     public void logInProcess(String name, String inputPassword){
         signInNameBox.sendKeys(name);
