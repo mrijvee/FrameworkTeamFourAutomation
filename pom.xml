@@ -15,6 +15,7 @@
         <module>NorthwesternMutual</module>
         <module>Facebook</module>
         <module>Amazon</module>
+        <module>BankOfAmerica</module>
     </modules>
 
     <dependencyManagement>

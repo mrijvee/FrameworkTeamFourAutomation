@@ -47,15 +47,15 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(boolean useCloudEnv, String cloudEnvName, String os, String os_version,
                       String browser_name, String browser_version, String url) throws IOException {
-        if(useCloudEnv == true){
-            if(cloudEnvName.equalsIgnoreCase("browserstack")){
+        if (useCloudEnv == true) {
+            if (cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName, browserstack_username, browserstack_accesskey, os,
                         os_version, browser_name, browser_version);
-            }else if(cloudEnvName.equalsIgnoreCase("saucelabs")){
+            } else if (cloudEnvName.equalsIgnoreCase("saucelabs")) {
                 getCloudDriver(cloudEnvName, saucelabs_username, saucelabs_accesskey, os,
                         os_version, browser_name, browser_version);
             }
-        }else{
+        } else {
             getLocalDriver(os, browser_name);
         }
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -64,21 +64,21 @@ public class CommonAPI {
         driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver(String os, String browser_name){
+    public WebDriver getLocalDriver(String os, String browser_name) {
         os = os.toLowerCase();
-        if(browser_name.equalsIgnoreCase("chrome")){
-            if(os.contains("win")){
+        if (browser_name.equalsIgnoreCase("chrome")) {
+            if (os.contains("win")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
                 driver = new ChromeDriver();
-            }else if(os.contains("mac") || os.contains("os x")){
+            } else if (os.contains("mac") || os.contains("os x")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
                 driver = new ChromeDriver();
             }
-        }else if(browser_name.equalsIgnoreCase("firefox")){
-            if(os.contains("win")){
+        } else if (browser_name.equalsIgnoreCase("firefox")) {
+            if (os.contains("win")) {
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver.exe");
                 driver = new FirefoxDriver();
-            }else if(os.contains("mac") || os.contains("os x")){
+            } else if (os.contains("mac") || os.contains("os x")) {
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
                 driver = new FirefoxDriver();
             }
@@ -107,13 +107,14 @@ public class CommonAPI {
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.close();
     }
 
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
     }
+
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
@@ -121,12 +122,15 @@ public class CommonAPI {
     public void typeByCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
+
     public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
+
     public void typeByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
+
     public void typeByXpathNEnter(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
     }
@@ -139,18 +143,22 @@ public class CommonAPI {
         String st = driver.findElement(By.cssSelector(locator)).getText();
         return st;
     }
+
     public String getTextByXpath(String locator) {
         String st = driver.findElement(By.xpath(locator)).getText();
         return st;
     }
+
     public String getTextById(String locator) {
         String st = driver.findElement(By.id(locator)).getText();
         return st;
     }
+
     public String getTextByName(String locator) {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
     }
+
     public List<String> getTextFromWebElements(String type, String locator) {
         List<WebElement> element;
         List<String> text = new ArrayList<>();
@@ -169,6 +177,7 @@ public class CommonAPI {
     public void navigateBack() {
         driver.navigate().back();
     }
+
     public void navigateForward() {
         driver.navigate().forward();
     }
@@ -182,6 +191,7 @@ public class CommonAPI {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
+
     public void cancelAlert() {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
@@ -191,6 +201,7 @@ public class CommonAPI {
     public void iframeHandle(WebElement element) {
         driver.switchTo().frame(element);
     }
+
     public void goBackToHomeWindow() {
         driver.switchTo().defaultContent();
     }
@@ -265,6 +276,7 @@ public class CommonAPI {
         }
 
     }
+
     public List<WebElement> getElementList(String type, String locator) {
         type = type.toLowerCase();
         List<WebElement> elementList = new ArrayList<WebElement>();

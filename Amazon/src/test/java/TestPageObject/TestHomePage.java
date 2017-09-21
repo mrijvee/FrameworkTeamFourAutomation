@@ -13,7 +13,7 @@ public class TestHomePage extends CommonAPI {
         HomePage homeobj = PageFactory.initElements(driver, HomePage.class);
         homeobj.clickOnHomePage();
     }
-    // @Test
+     @Test
     public void logInToAmazon() throws InterruptedException {
         HomePage homeobj2 = PageFactory.initElements(driver, HomePage.class);
         homeobj2.clickOnHomePage();
