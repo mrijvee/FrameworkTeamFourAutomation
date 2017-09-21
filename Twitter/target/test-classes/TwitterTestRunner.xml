@@ -14,8 +14,8 @@
         <parameter name="url" value="https://twitter.com/search?q=%23homepage"/>
 
         <classes>
-            <class name="testPageObject.TestHomePage"/>
-            <class name="testPageObject.TestPofilePage"/>
+            <class name="PageObject.TestHomePage"/>
+            <class name="PageObject.TestPofilePage"/>
         </classes>
     </test>
 

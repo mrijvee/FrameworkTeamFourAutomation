@@ -12,11 +12,5 @@ public class TestHomePage extends CommonAPI {
 //        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 //        homePage.MenuBar();
 //    }
-    @Test
-    public void testSignUp() {
-        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.MenuBar();
-
-    }
-
+//
 }
