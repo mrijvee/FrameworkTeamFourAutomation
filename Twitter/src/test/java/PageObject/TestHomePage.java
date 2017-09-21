@@ -1,9 +1,6 @@
-package testPageObject;
+package PageObject;
 
 import base.CommonAPI;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-import pageobjects.TwitterHomePage;
 
 public class TestHomePage extends CommonAPI {
 
