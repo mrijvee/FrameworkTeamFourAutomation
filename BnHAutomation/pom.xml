@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>BestbuyAutomation</artifactId>
+    <artifactId>BnHAutomation</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.pnt.framework</groupId>
@@ -40,5 +40,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
