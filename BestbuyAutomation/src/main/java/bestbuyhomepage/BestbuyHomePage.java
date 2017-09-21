@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BestbuyHomePage extends CommonAPI {
     @FindBy(how= How.XPATH, using = ".//*[@id='locationId']")
+    @FindBy(how= How.CSS, using = ".logo>a>span")
     public static WebElement getridofPopUp;
     @FindBy(how= How.XPATH, using = ".//*[@id='menu0']")
     public static WebElement gotoProducts;

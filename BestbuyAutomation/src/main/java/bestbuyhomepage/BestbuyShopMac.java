@@ -70,6 +70,9 @@ public class BestbuyShopMac extends CommonAPI {
         basedOnRatings.click();
         Thread.sleep(3000);
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5359b0d151b3816d4e8e9fe366202ee2878df606
 }
