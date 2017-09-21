@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 public class TestHomePage extends CommonAPI {
 
-//    @Test
-//    public void testMenuButton(){
-//        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-//        homePage.MenuBar();
-//    }
-//
+    @Test
+    public void testMenuButton(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.MenuBar();
+    }
+
 }

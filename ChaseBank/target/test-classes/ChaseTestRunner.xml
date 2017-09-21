@@ -14,9 +14,10 @@
         <parameter name="url" value="https://www.chase.com/"/>
 
         <classes>
-            <class name="PageObject.HomePage"/>
             <class name="PageObject.TestHomePage"/>
+            <class name="PageObject.TestSingInPage"/>
         </classes>
+
     </test>
 
 </suite>
