@@ -80,12 +80,21 @@ public class testBestbuyProduct extends CommonAPI {
 //        BestbuyHomePage creditcardINFO = PageFactory.initElements(driver, BestbuyHomePage.class);
 //        creditcardINFO.addcreditCard("1234567812345678", 3, 3, "Savin", "Bolton", "37st", "1st Floor", "New York", 38, "11103", "7186884355");
 //    }
+<<<<<<< HEAD
+//    @Test
+//    public void termsAndConditions () throws InterruptedException {
+//        BestbuyHomePage termsandconditions = PageFactory.initElements(driver, BestbuyHomePage.class);
+//        termsandconditions.termsandCondition();
+//    }
+    @Test
+=======
     @Test
     public void termsAndConditions () throws InterruptedException {
         BestbuyHomePage termsandconditions = PageFactory.initElements(driver, BestbuyHomePage.class);
         termsandconditions.termsandCondition();
     }
     @Test (enabled = false)
+>>>>>>> 5359b0d151b3816d4e8e9fe366202ee2878df606
     public void buyIphoneX () throws InterruptedException {
         BestbuyHomePage buyiphonex = PageFactory.initElements(driver, BestbuyHomePage.class);
         buyiphonex.iphoneX("Verizon", "", "");

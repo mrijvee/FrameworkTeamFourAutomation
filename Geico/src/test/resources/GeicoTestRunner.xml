@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Geico" parallel="true">
+    <!--<test name="geicopageobjects.SignUp">-->
+        <!--<parameter name="useCloudEnv" value="false"/>-->
+        <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+        <!--<parameter name="os" value="win"/>-->
+        <!--<parameter name="os_version" value="Sierra"/>-->
+        <!--<parameter name="browser_name" value="chrome"/>-->
+        <!--<parameter name="browser_version" value="53.0"/>-->
+        <!--<parameter name="url" value="https://www.geico.com"/>-->
+        <!--<classes>-->
+            <!--<class name="testgeicopageobjects.TestSignUp"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="geicopageobjects.LogIn">-->
+        <!--<parameter name="useCloudEnv" value="false"/>-->
+        <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+        <!--<parameter name="os" value="win"/>-->
+        <!--<parameter name="os_version" value="Sierra"/>-->
+        <!--<parameter name="browser_name" value="chrome"/>-->
+        <!--<parameter name="browser_version" value="53.0"/>-->
+        <!--<parameter name="url" value="https://www.geico.com"/>-->
+        <!--<classes>-->
+            <!--<class name="testgeicopageobjects.TestLogIn"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="geicopageobjects.HomePage">-->
+        <!--<parameter name="useCloudEnv" value="false"/>-->
+        <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+        <!--<parameter name="os" value="win"/>-->
+        <!--<parameter name="os_version" value="Sierra"/>-->
+        <!--<parameter name="browser_name" value="chrome"/>-->
+        <!--<parameter name="browser_version" value="53.0"/>-->
+        <!--<parameter name="url" value="https://www.geico.com"/>-->
+        <!--<classes>-->
+            <!--<class name="testgeicopageobjects.TestHomePage"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="geicopageobjects.AutoInsurance">
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="browserstack"/>
+        <parameter name="os" value="win"/>
+        <parameter name="os_version" value="Sierra"/>
+        <parameter name="browser_name" value="chrome"/>
+        <parameter name="browser_version" value="53.0"/>
+        <parameter name="url" value="https://www.geico.com/auto-insurance/"/>
+        <classes>
+            <class name="testgeicopageobjects.TestAutoInsurance"/>
+        </classes>
+    </test>
+</suite>

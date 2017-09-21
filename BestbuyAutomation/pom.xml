@@ -3,8 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+<<<<<<< HEAD
+        <artifactId>TeamFourTesting</artifactId>
+        <groupId>org.TeamFour</groupId>
+=======
         <artifactId>SeleniumFramework</artifactId>
         <groupId>org.pnt.framework</groupId>
+>>>>>>> 5359b0d151b3816d4e8e9fe366202ee2878df606
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
