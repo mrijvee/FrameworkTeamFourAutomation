@@ -11,11 +11,13 @@
     <modules>
         <module>Generic</module>
         <module>Twitter</module>
-        <module>Geico</module>
+        <module>Facebook</module>
+        <module>Progressive</module>
         <module>NorthwesternMutual</module>
         <module>Facebook</module>
         <module>Amazon</module>
         <module>BankOfAmerica</module>
+        <module>Geico</module>
     </modules>
 
     <dependencyManagement>
