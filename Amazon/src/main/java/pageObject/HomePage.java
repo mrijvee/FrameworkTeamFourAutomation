@@ -52,7 +52,7 @@ public class HomePage extends CommonAPI {
     public void logIn() throws InterruptedException {
         email.sendKeys("pntselenium@gmail.com");
         passBox.sendKeys("7866dcba");
-        Thread.sleep(5000);
+        Thread.sleep(1500);
     }
 
     public void departmentName() throws InterruptedException {
