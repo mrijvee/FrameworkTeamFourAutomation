@@ -32,9 +32,9 @@ public class testBnHhomepage extends CommonAPI {
         BnHhomepage optionsAcessories = PageFactory.initElements(driver, BnHhomepage.class);
         optionsAcessories.accessories("Tripods", "", "", "", "","");
     }
-    @Test
-    public void choiceOfcomputers () throws InterruptedException {
-        BnHhomepage choicesComputers = PageFactory.initElements(driver, BnHhomepage.class);
-        choicesComputers.choiceofComputers("Laptops", "", "");
-    }
+//    @Test
+//    public void choiceOfcomputers () throws InterruptedException {
+//        BnHhomepage choicesComputers = PageFactory.initElements(driver, BnHhomepage.class);
+//        choicesComputers.choiceofComputers("Laptops", "", "");
+//    }
 }
