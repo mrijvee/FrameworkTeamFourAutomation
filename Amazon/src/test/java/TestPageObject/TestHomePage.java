@@ -13,7 +13,7 @@ public class TestHomePage extends CommonAPI {
         HomePage homeobj = PageFactory.initElements(driver, HomePage.class);
         homeobj.clickOnHomePage();
     }
-    // @Test
+     @Test
     public void logInToAmazon() throws InterruptedException {
         HomePage homeobj2 = PageFactory.initElements(driver, HomePage.class);
         homeobj2.clickOnHomePage();
@@ -42,13 +42,13 @@ public class TestHomePage extends CommonAPI {
     }
     // @Test
     public void giftOfTheday() throws InterruptedException {
-        HomePage homeobj7 = PageFactory.initElements(driver, HomePage.class);
-        homeobj7.giftcard();
+        HomePage homeobj = PageFactory.initElements(driver, HomePage.class);
+        homeobj.giftcard();
     }
     @Test
     public void myAccountAndList() throws InterruptedException {
-        HomePage homeobj8 = PageFactory.initElements(driver, HomePage.class);
-        homeobj8.pagehover();
+        HomePage homeobj = PageFactory.initElements(driver, HomePage.class);
+        homeobj.pagehover();
     }
 }
 

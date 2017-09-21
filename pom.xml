@@ -13,13 +13,14 @@
         <module>Twitter</module>
         <module>Facebook</module>
         <module>Progressive</module>
-        <module>Geico</module>
         <module>NorthwesternMutual</module>
         <module>Facebook</module>
         <module>BestbuyAutomation</module>
         <module>BnHAutomation</module>
         <module>BnHAutomation</module>
-
+        <module>Amazon</module>
+        <module>BankOfAmerica</module>
+        <module>Geico</module>
     </modules>
 
     <dependencyManagement>
