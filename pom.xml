@@ -20,6 +20,7 @@
 
 =======
         <module>Amazon</module>
+        <module>BankOfAmerica</module>
         <module>Geico</module>
 >>>>>>> 5182e78e06261e7611393d9eafae14ebfd2fff64
     </modules>
