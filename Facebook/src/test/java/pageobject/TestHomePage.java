@@ -1,9 +1,6 @@
-package testpageobject;
+package pageobject;
 
 import base.CommonAPI;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-import pageobject.HomePage;
 
 public class TestHomePage extends CommonAPI {
 
@@ -27,10 +24,10 @@ public class TestHomePage extends CommonAPI {
 //        HomePage createAccount = PageFactory.initElements(driver, HomePage.class);
 //        createAccount.setLoginBox();
 //    }
-    @Test
-    public void createPost() throws InterruptedException {
-        HomePage createAPostWall = PageFactory.initElements(driver, HomePage.class);
-        createAPostWall.createAPost();
-
-    }
+//    @Test
+//    public void createPost() throws InterruptedException {
+//        HomePage createAPostWall = PageFactory.initElements(driver, HomePage.class);
+//        createAPostWall.createAPost();
+//
+//    }
 }

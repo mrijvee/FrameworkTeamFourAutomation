@@ -14,7 +14,7 @@
         <parameter name="url" value="https://facebook.com"/>
 
         <classes>
-            <class name="testpageobject.TestHomePage"/>
+            <class name="pageobject.TestHomePage"/>
         </classes>
     </test>
 

@@ -58,6 +58,8 @@ public class HomePage extends CommonAPI {
         loginBox.click();
         //
         Thread.sleep(5000);
+        driver.navigate().refresh();
+        Thread.sleep(5000);
         createAPost.click();
         homePage.click();
         createAPost.click();
