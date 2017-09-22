@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import javax.xml.xpath.XPath;
 
+import static base.CommonAPI.driver;
+
 public class TwitterHomePage extends CommonAPI {
 
 

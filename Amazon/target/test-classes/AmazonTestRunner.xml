@@ -13,7 +13,7 @@
         <parameter name="browser_version" value="53.0"/>
         <parameter name="url" value="http://www.amazon.com"/>
         <classes>
-            <class name="TestPageObject.TestHomePage"/>
+            <class name="TestPageObject.TestLoginhome"/>
         </classes>
     </test>
 

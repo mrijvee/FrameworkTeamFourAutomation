@@ -17,7 +17,13 @@
         <module>Facebook</module>
         <module>EdwardJones</module>
         <module>GoldmanSachs</module>
-
+        <module>ChaseBank</module>
+        <module>BestbuyAutomation</module>
+        <module>BnHAutomation</module>
+        <module>BnHAutomation</module>
+        <module>Amazon</module>
+        <module>BankOfAmerica</module>
+        <module>Geico</module>
     </modules>
 
     <dependencyManagement>

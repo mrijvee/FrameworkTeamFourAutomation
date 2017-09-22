@@ -86,6 +86,11 @@ public class testBestbuyProduct extends CommonAPI {
 //        termsandconditions.termsandCondition();
 //    }
     @Test
+    public void termsAndConditions () throws InterruptedException {
+        BestbuyHomePage termsandconditions = PageFactory.initElements(driver, BestbuyHomePage.class);
+        termsandconditions.termsandCondition();
+    }
+    @Test (enabled = false)
     public void buyIphoneX () throws InterruptedException {
         BestbuyHomePage buyiphonex = PageFactory.initElements(driver, BestbuyHomePage.class);
         buyiphonex.iphoneX("Verizon", "", "");
