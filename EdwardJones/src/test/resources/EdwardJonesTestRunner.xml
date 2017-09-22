@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EdwardJones" parallel="tests">
+
+    <test name="EdwardJones Features">
+
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="browserstack"/>
+        <parameter name="os" value="win"/>
+        <parameter name="os_version" value="Sierra"/>
+        <parameter name="browser_name" value="chrome"/>
+        <parameter name="browser_version" value="53.0"/>
+        <parameter name="url" value="https://www.edwardjones.com/index.html"/>
+
+
+        <classes>
+            <class name="test_edward_jones.TestEdwardJones"/>
+            <class name="test_edward_jones.TestEdwardJonesLifeCalculator"/>
+        </classes>
+    </test>
+
+    <test name="EdwardJones Life Insurance Calculator">
+
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="browserstack"/>
+        <parameter name="os" value="win"/>
+        <parameter name="os_version" value="Sierra"/>
+        <parameter name="browser_name" value="chrome"/>
+        <parameter name="browser_version" value="53.0"/>
+        <parameter name="url" value="https://www.edwardjones.com/preparing-for-your-future/calculators-checklists/calculators/life-insurance-needs-calculator.html"/>
+
+        <classes>
+            <class name="test_edward_jones.TestEdwardJonesLifeCalculator"/>
+        </classes>
+    </test>
+
+</suite>

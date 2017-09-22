@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GoldmanSachs" parallel="tests">
+
+    <test name="GoldmanSachs Features">
+
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="browserstack"/>
+        <parameter name="os" value="win"/>
+        <parameter name="os_version" value="Sierra"/>
+        <parameter name="browser_name" value="chrome"/>
+        <parameter name="browser_version" value="53.0"/>
+        <parameter name="url" value="http://www.goldmansachs.com/"/>
+
+        <classes>
+            <class name="test_goldman_home.TestGoldmanHome"/>
+        </classes>
+    </test>
+
+</suite>
