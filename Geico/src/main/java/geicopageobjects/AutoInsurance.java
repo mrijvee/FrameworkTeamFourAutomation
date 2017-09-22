@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-public class AutoInsurance extends CommonAPI {
+public class  AutoInsurance extends CommonAPI {
 
     @FindBy(how = How.XPATH, using = ".//input[@id='zip']")
     public static WebElement enterNewZip;
