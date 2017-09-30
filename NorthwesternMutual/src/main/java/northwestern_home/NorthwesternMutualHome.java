@@ -10,25 +10,25 @@ import java.util.concurrent.TimeUnit;
 
 public class NorthwesternMutualHome extends CommonAPI {
 
-    @FindBy(how = How.XPATH, using = "html/body/section[2]/a")
+    @FindBy(how = How.XPATH, using = "html/body/main/section[1]/a")
     private static WebElement letsTalk;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[1]/li[1]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[1]/li[1]/a")
     private static WebElement whoWeAre;
-    @FindBy(how = How.XPATH, using ="html/body/header/div/ul[1]/li[2]/a")
+    @FindBy(how = How.XPATH, using ="html/body/header/nav/ul[1]/li[2]/a")
     private static WebElement planningServices;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[1]/li[3]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[1]/li[3]/a")
     private static WebElement insurance;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[1]/li[4]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[1]/li[4]/a")
     private static WebElement investments;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[1]/li[5]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[1]/li[5]/a")
     private static WebElement lifeAndMoney;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[2]/li[1]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[2]/li[1]/a/span")
     private static WebElement findAdvisor;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[2]/li[2]/a")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[2]/li[2]/a/span")
     private static WebElement claims;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[2]/li[3]/label")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[2]/li[3]/label")
     private static WebElement logIn;
-    @FindBy(how = How.XPATH, using = "html/body/header/div/ul[3]/li[1]/label[1]")
+    @FindBy(how = How.XPATH, using = "html/body/header/nav/ul[3]/li[1]/label[1]")
     private static WebElement search;
     @FindBy(how=How.XPATH, using = "html/body/nm-search-page/div/div[2]/form/input")
     private static WebElement searchBox;
